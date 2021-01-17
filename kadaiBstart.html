@@ -35,6 +35,7 @@
 
     const num = 10;
     const winner = Math.floor(Math.random() * num); // 0 - 9
+    const loser = Math.floor(Math.random() * num); // 0 - 9//0 - 9
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
@@ -50,7 +51,7 @@
         } else if (i%2 === 0) {
           div.textContent = '中吉';
           div.classList.add('中吉');
-        }else if (i%2 === 1) {
+        } else {
          div.textContent = '小吉';
           div.classList.add('小吉'); 
         }    
