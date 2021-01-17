@@ -45,6 +45,9 @@
         if (i === winner) {
           div.textContent = '大吉';
           div.classList.add('win');
+        } else if (i === loser) {
+          div.textContent = '凶';
+          div.classList.add('loser');
         } else if (i%2 === 0) {
           div.textContent = '中吉';
           div.classList.add('中吉');
