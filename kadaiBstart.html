@@ -36,7 +36,7 @@
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        console.log(messages[messageNo]);
+        div.textContent(messages[messageNo]);
       });
 
       document.body.appendChild(div);
