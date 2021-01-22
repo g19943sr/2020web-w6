@@ -18,14 +18,7 @@
       text-align: center;
       line-height: 100px;
     }
-    .win {
-      background: pink;
-      border-radius: 50%;
-      transform: rotate(360deg);
-    }
-    .lose {
-      transform: scale(0.9);
-    }
+   
   </style>
 </head>
 <body>
@@ -43,7 +36,7 @@
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        console.log(messages[messageNo]);
+        div.textContent(messages[messageNo]);
       });
 
       document.body.appendChild(div);
