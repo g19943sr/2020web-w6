@@ -36,7 +36,7 @@
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        div.textContent = results[n];
+        div.textContent = results[Math.floor(Math.random() * results.length)];
       });
 
       document.body.appendChild(div);
